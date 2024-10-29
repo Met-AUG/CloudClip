@@ -9,20 +9,13 @@
   },
   "dependencies": {
     "@traptitech/markdown-it-katex": "^3.6.0",
-<<<<<<< HEAD
-=======
     "@vue/compiler-sfc": "^3.5.12",
->>>>>>> 510385f (fix)
     "core-js": "^3.8.3",
     "highlight.js": "^11.10.0",
     "katex": "^0.16.11",
     "markdown-it": "^14.1.0",
     "markdown-it-link-attributes": "^4.0.1",
     "marked": "^14.1.2",
-<<<<<<< HEAD
-    "vue": "^3.2.13",
-=======
->>>>>>> 510385f (fix)
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
