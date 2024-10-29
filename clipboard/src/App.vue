@@ -27,11 +27,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f3e5f5;
+<<<<<<< HEAD
   min-height: 90vh;
+=======
+  height: 100vh;
+>>>>>>> 510385f (fix)
 }
 
 .app-header {
   background-color: #7e57c2;
+<<<<<<< HEAD
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -40,6 +45,17 @@ body {
 .app-title {
   margin: 0;
   font-size: 2.5em;
+=======
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100px;
+}
+
+.app-title {
+  height: 100px;
+  margin: 0;
+  font-size: 26px;
+>>>>>>> 510385f (fix)
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -47,7 +63,12 @@ body {
 }
 
 .cloud-icon {
+<<<<<<< HEAD
   font-size: 1.2em;
+=======
+  /* font-size: 1.2em; */
+  font-size: 26px;
+>>>>>>> 510385f (fix)
   margin-right: 10px;
 }
 

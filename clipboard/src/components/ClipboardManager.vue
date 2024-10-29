@@ -69,9 +69,8 @@
   <style scoped>
   .clipboard-manager {
     display: flex;
-    height: 87vh;
+    height: calc(100vh - 100px);
     font-family: Arial, sans-serif;
-    overflow: hidden;
     background-color: #f3e5f5;
     padding: 20px;
     box-sizing: border-box;
@@ -86,8 +85,7 @@
     width: 50%;
   }
   
-  .editor-section,
-  .preview-section {
+  .editor-section{
     padding: 15px;
     box-sizing: border-box;
     margin: 0 10px;
@@ -97,18 +95,22 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    align-items: center;   
   }
-  
-  .textarea-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .preview-section {
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    max-height: 100px;
+    overflow-y: auto;
   }
   
   textarea {
     flex: 1;
-    width: 96%;  /* 缩短宽度，用百分比控制 */
-
+    width: calc(96% - 20px);
     resize: none;
     border: none;
     border-radius: 10px;
@@ -120,15 +122,12 @@
   }
   
   .controls {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 96%;
     gap: 10px;
   }
   
   .save-button {
     width: 100%; /* 同样的宽度控制 */
-
     padding: 10px 15px;
     background-color: #ba68c8;
     color: white;
