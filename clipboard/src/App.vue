@@ -27,19 +27,20 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f3e5f5;
-  min-height: 90vh;
+  height: 100vh;
 }
 
 .app-header {
   background-color: #7e57c2;
-  padding: 20px 0;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 100px;
 }
 
 .app-title {
+  height: 100px;
   margin: 0;
-  font-size: 2.5em;
+  font-size: 26px;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -47,7 +48,8 @@ body {
 }
 
 .cloud-icon {
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
+  font-size: 26px;
   margin-right: 10px;
 }
 
