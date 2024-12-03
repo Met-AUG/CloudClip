@@ -1,0 +1,41 @@
+services:
+  clipboard:
+    build: ./clipboard
+    ports:
+      - '80:80'
+      - '443:3443'
+    depends_on:
+      - server
+    networks:
+      - app-network
+
+  server:
+    build: ./server
+    ports:
+      - '3000:3000'
+      - '3443:3443'
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/cloudclip
+      - SSL_KEY_PATH=/etc/ssl/certs/privkey.pem
+      - SSL_CERT_PATH=/etc/ssl/certs/fullchain.pem
+    volumes:
+      - /server/hxzzzasia:/etc/ssl/certs
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo
+    ports:
+      - '27018:27017'
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - app-network
+
+volumes:
+  mongo-data:
+
+networks:
+  app-network:

@@ -1,12 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ClipboardManager from './components/ClipboardManager.vue'
 import SharedClipboard from './components/SharedClipboard.vue'
-import ClipBoard from './components/ClipBoard.vue'
+import ClipBoardWithHeader from './components/ClipBoardWithHeader.vue'
 
 const routes = [
-  { path: '/', component: ClipBoard },
-  { path: '/clip/:id', component: SharedClipboard },
-  { path: '/old', component: ClipboardManager}
+  { path: '/', component: ClipBoardWithHeader },
+  { path: '/clip/:id', component: SharedClipboard }
 ]
 
 const router = createRouter({
